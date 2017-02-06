@@ -19,7 +19,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -40,7 +40,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <EmbedManifest>false</EmbedManifest>
-    <IncludePath>..\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\include;..\FileDll;..\Net;..\ScreenShot;..\Music;$(IncludePath)</IncludePath>
     <LibraryPath>..\debuglib;..\releaselib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -77,12 +77,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1.cpp" />
     <ClCompile Include="curlFtp.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="playMusic.cpp" />
     <ClCompile Include="takePhoto.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="curlFtp.h" />
+    <ClInclude Include="playMusic.h" />
     <ClInclude Include="takePhoto.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

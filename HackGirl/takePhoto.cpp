@@ -131,7 +131,7 @@ BOOL ScreenShot::CaptureScreenToFile(LPCTSTR szFileName, int BitCount) //½ØÆÁ±£´
     HBITMAP hbmp = CaptureScreen(NULL);
     if(hbmp)
     {
-        HDC hdc = CreateDC(L"Display", NULL, NULL, NULL);
+        HDC hdc = CreateDC("Display", NULL, NULL, NULL);
         BITMAPFILEHEADER * pbmfh = DDBToDIB (hdc, hbmp, BitCount);
         ReleaseDC(NULL,hdc);
         if(pbmfh)

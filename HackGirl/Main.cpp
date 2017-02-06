@@ -1,9 +1,18 @@
 #include "takePhoto.h"
 #include "curlFtp.h"
 #include <iostream>
+#include "FileDll.h"
+#include "playMusic.h"
+using namespace wLog;
+#pragma comment(lib, "FileDll.lib")
+
+
+
+
 
 int main()
 {
+	/*
 	ScreenShot *scrShot = new ScreenShot();
 	CCurlFtp *curlFtp = new CCurlFtp();
 	while(1){
@@ -23,7 +32,9 @@ int main()
 		//sprintf(filename, "E:\\%sbmp.bmp", localTime);
 		scrShot->CaptureScreenToFile(L"test.bmp",32);
 		curlFtp->uploadFile("test.bmp", localTime, "ftp://192.168.0.105");
-
 	}
+	*/
+	PlayMusic *playMusic = new PlayMusic();
+	playMusic->play("E:\\CloudMusic");
 	return 0;
 }

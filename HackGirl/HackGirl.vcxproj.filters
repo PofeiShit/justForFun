@@ -15,21 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="takePhoto.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="curlFtp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="playMusic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="takePhoto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="takePhoto.h">
+    <ClInclude Include="curlFtp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="curlFtp.h">
+    <ClInclude Include="playMusic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="takePhoto.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
